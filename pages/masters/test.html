@@ -1,0 +1,58 @@
+<div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Document Manager</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form class="form-horizontal" id="frmDocCreate" method = "POST" action = "../../Classes/doc_manager_logic.php">
+            <!-- ../../Classes/Society.php -->
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="txtDocMasterCode" class="col-sm-2 control-label">Mater Category</label>
+
+                  <div id="divDocMasterCode" class="col-sm-10">
+                    <input type="number" class="form-control" id="txtDocMasterCode" name="txtDocMasterCode" placeholder="Document Master Code" autofocus = "true"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="txtDocSubCode" class="col-sm-2 control-label">Sub-Category</label>
+
+                  <div id="divDocSubCode" class="col-sm-10">
+                    <input type="number" class="form-control" id="txtDocSubCode" name="txtDocSubCode" placeholder="Document Category"/>
+                  </div>
+                </div>
+               
+                <div class="form-group">
+                  <label for="txtGrowerCode" class="col-sm-2 control-label">Grower Code</label>
+
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="txtGrowerCode" name="txtGrowerCode" placeholder="Grower Code"/>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="txtRemarks" class="col-sm-2 control-label">Remarks</label>
+
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtRemarks" name="txtRemarks" placeholder="Remarks"/>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button class="btn btn-default">Cancel</button>
+                <span id="spanInformation" class=""><span>
+                <button type="button" id="btnSaveDoc" name="btnSaveDoc" class="btn btn-info pull-right">Save</button>
+              </div>
+              <div class = "panel-primary col-sm-5" id="availableOptionsBox" > 
+                <div class="panel-heading">
+                  <h3 class = "panel-title">Available Options</h3>
+                </div>
+                <div class="panel-body" id="availableOptions">
+                  
+                </div>
+              </div>
+              <!-- /.box-footer -->
+            </form>
+        </div>
